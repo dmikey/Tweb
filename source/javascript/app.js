@@ -4,13 +4,14 @@ enyo.kind({
 	rendered:function(){
 	
 		//set app.me to the main app container
-		app.me = this;
+		app = this;
 		
-		//call the app bootstrap
-		app.initialize();
+
 	
 		
-	}
+	},
+	//with-in the enyo framework we will declare all our other components that have been built elsewhere.
+	components:[{name: "gui", kind: "gui"}]
 });
 
 

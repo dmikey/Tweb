@@ -1,12 +1,11 @@
-app.accounts = {}
 
 //this file contains the logic to add accounts to local storage, as well as account authentication and callback for oauth
-app.accounts.load = function(){			
+function appthing(){			
 	//verify initial accounts			
 	var oauth_token = getParameterByName("oauth_token");
 	var accessData = localStorage.accessdata;
 	var loadGUI = false;
-
+	accessData = ""
 	if(accessData == ""){
 			//if no accounts found, then ask if we need to add accounts
 			if(oauth_token != ""){
@@ -14,7 +13,7 @@ app.accounts.load = function(){
 				localStorage.oauth_verifier = getParameterByName("oauth_verifier");
 				this.getAuth();
 			}else{
-				var p = this.$.NoAccounts;
+				var p = app.$.gui.$.NoAccounts;
 				if (p) {
 					p.show();
 				}
