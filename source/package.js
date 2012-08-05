@@ -1,12 +1,12 @@
 enyo.depends(
 	"$lib/layout",
 	"$lib/onyx",
-	"initialize.js",
-	"helpers.js",
-	"gui.js",
-	"app.css",
-	"app.js",
-	"jsOAuth-1.3.4.min.js",
-	"accounts.js"
+	"javascript/initialize.js",
+	"javascript/helpers.js",
+	"javascript/gui.js",
+	"css/app.css",
+	"javascript/app.js",
+	"javascript/jsOAuth-1.3.4.min.js",
+	"javascript/accounts.js"
 );
 
