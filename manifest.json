@@ -8,8 +8,8 @@
     }
   },
   "icons": {
-    "16": "icon_16.png",
-    "128": "icon_128.png"
+    "16": "assets/Black-Tweet-Bird-32.png",
+    "128": "assets/Black-Tweet-Bird-128.png"
   },
   "permissions": [
     "unlimitedStorage",
