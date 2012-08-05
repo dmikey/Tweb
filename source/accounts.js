@@ -1,14 +1,6 @@
 app.accounts = {}
 
 //this file contains the logic to add accounts to local storage, as well as account authentication and callback for oauth
-enyo.kind({ name: "NoAccounts", 
-			kind: "onyx.Popup", 
-			centered: true, 
-			floating: true, 
-			classes:"onyx-sample-popup", 
-			style: "padding: 10px;", 
-			components:[{content: "Popup..."}]});
-
 app.accounts.load = function(){			
 	//verify initial accounts			
 	var oauth_token = getParameterByName("oauth_token");
