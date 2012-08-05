@@ -1,9 +1,16 @@
+//enyo enters at App
 enyo.kind({
 	name: "App",
-	kind: "Panels",
-	classes: "enyo-fit onyx playground-sample-panels",
-	arrangerKind:"CollapsingArranger",
-	components: [{}]
+	rendered:function(){
+	
+		//set app.me to the main app container
+		app.me = this;
+		
+		//call the app bootstrap
+		app.initialize();
+	
+		
+	}
 });
 
 
